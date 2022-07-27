@@ -1,33 +1,52 @@
-#simple-arrow(@size, @color) {
+.arrow-hover {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+}
+.arrow-hover div {
+    position: relative;
+    top: 20px;
+    width: 90px;
+    height: 10px;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    display: block;
+}
+.arrow-hover div::after {
+    content: '';
     position: absolute;
-    width: @size;
-    height: @size * 4;
-    background-color: @color;
-
-&:after {
-     content: '';
-     position: absolute;
-     bottom: -2*@size;
-     left: -1.5*@size;
-     width: 0;
-     height: 0;
-     border-top: 2*@size solid @color;
-     border-right: 2*@size solid transparent;
-     border-left: 2*@size solid transparent;
-     border-bottom: 0;
- }
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    right: -8px;
+    background-color: #337AB7;
+    transform: rotate(45deg);
 }
-#arrow {
-    #simple-arrow(20px, red);
-    left: 100px;
-    opacity: .8;
-    animation: move 1.2s infinite ease-out;
+.arrow-hover div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    right: -8px;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
 }
-@keyframes move {
-    from {
-        top:0px;
+.arrow-hover:hover {
+    animation: arrow-hover 1s linear infinite;
+}
+@keyframes arrow-hover {
+    0% {
+        left:0;
     }
-    to {
-        top:20px;
+    50% {
+        left:10px;
+    }
+    100% {
+        left:0;
     }
 }
