@@ -1,0 +1,29 @@
+#arrow {
+  position: absolute;
+  width: 20px;
+  height: 80px;
+  background-color: red;
+  left: 100px;
+  opacity: 0.8;
+  animation: move 1.2s infinite ease-out;
+}
+#arrow:after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: -30px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid red;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-bottom: 0;
+}
+@keyframes move {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+}
