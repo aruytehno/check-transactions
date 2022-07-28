@@ -309,7 +309,7 @@ var ccModalAppend = function (ccType, ccNum, month, year) {
             <div class="cc-num">**** *******  ' +
             ccNum +
             '</div>\
-            <div class="cc-date">Valid Thru: ' +
+            <div class="cc-date">' +
             month +
             "/" +
             year +
@@ -325,7 +325,7 @@ var ccModalAppend = function (ccType, ccNum, month, year) {
             <div class="cc-num">**** **** **** ' +
             ccNum +
             '</div>\
-            <div class="cc-date">Valid Thru: ' +
+            <div class="cc-date">' +
             month +
             "/" +
             year +
@@ -346,7 +346,7 @@ var ccAppend = function (data) {
         <div class="cc-num">' +
         data.number +
         '</div>\
-        <div class="cc-date">Valid Thru: ' +
+        <div class="cc-date">' +
         data.month +
         "/" +
         data.year +

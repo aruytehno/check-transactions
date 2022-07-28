@@ -217,9 +217,11 @@ h4 {
 }
 
 .cc-date {
-    margin-top: 8px;
-    font-family: 'Roboto', sans-serif;
-    color: #888;
+    font-family: "PT Mono", Helvetica, sans-serif;
+    font-size: 18px;
+    /*position: absolute;*/
+    bottom: 8px;
+    left: 15px;
 }
 
 .visa .cc-img,
