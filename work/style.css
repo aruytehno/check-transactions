@@ -212,8 +212,11 @@ h4 {
 }
 
 .cc-num {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-family: "PT Mono", Helvetica, sans-serif;
+    font-size: 16px;
+    /*position: absolute;*/
+    bottom: 8px;
+    left: 15px;
 }
 
 .cc-date {
